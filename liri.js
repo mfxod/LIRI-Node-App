@@ -31,7 +31,8 @@ var getArtistNames = function(artist) {
 
 // Function for running a Spotify search
 var getMeSpotify = function(songName) {
-  if (songName === undefined) {
+  // "songName === undefined" didn't work so I changed it to "!songName"
+  if (!songName) {
     songName = "What's my age again";
   }
 
@@ -96,7 +97,8 @@ var getMyBands = function(artist) {
 
 // Function for running a Movie Search
 var getMeMovie = function(movieName) {
-  if (movieName === undefined) {
+  // "movieName === undefined" didn't work so I changed it to "!movieName"
+  if (!movieName) {
     movieName = "Mr Nobody";
   }
 
