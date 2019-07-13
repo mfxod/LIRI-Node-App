@@ -1,5 +1,5 @@
 # LIRI-Node-App
-A command line node app that queries APIs to return data to the user.
+A command line node app that queries APIs to return data to the user. User provides one of four standard commands plus their own input depending on the command. 
 
 ### APIs used:
 * Spotify
@@ -7,15 +7,18 @@ A command line node app that queries APIs to return data to the user.
 * OMDB
   
 ### NPM packages used:
+* FS
 * Axios
 * Node-Spotify-API
 * Moment
 * DotEnv
 
-Clearly state the problem the app is trying to solve (i.e. what is it doing and why)
-Give a high-level overview of how the app is organized
-Give start-to-finish instructions on how to run the app
+### Commands available:
+* `concert-this` takes an `'<artist/band name>'`, searches the Bands in Town Artist Events API and returns venue name, venue location and event date
+* `spotify-this-song` takes a `'<song name>'`, searches the Spotify API and returns the artist, song name, a preview link and the album
+* `movie-this` takes a `'<movie name>'`, searches the OMDB API and returns title, year, IMDB rating, Rotten Tomatoes rating, country where produced, language, plot and actors
+* `do-what-it-says` uses the text inside the random.txt file to supply the command and user input to run one of the three commands above
+
 Include screenshots, gifs or videos of the app functioning
-Contain a link to a deployed version of the app
 
 
